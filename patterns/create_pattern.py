@@ -89,10 +89,10 @@ class Equipment:
         self.equipment = equipment
         self.services = []
 
-    def services_count(self):
+    def service_count(self):
         result = len(self.services)
         if self.services:
-            result += self.equipment.services_count()
+            result += self.equipment.service_count()
         return result
 
 

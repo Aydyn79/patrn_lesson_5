@@ -47,7 +47,7 @@ class CreateService:
             if self.equipment_id != -1:
                 equipment = site.find_equipment_by_id(int(self.equipment_id))
 
-                service = site.create_service('record', name, equipment)
+                service = site.create_service('сommissioning', name, equipment)
                 site.services.append(service)
 
             return '200 OK', render('service_list.html',
